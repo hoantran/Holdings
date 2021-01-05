@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B505F91259DD2FC0055687F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B505F90259DD2FC0055687F /* Extensions.swift */; };
 		3BB43CB5259DB9FF0093B92C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB43CB4259DB9FF0093B92C /* AppDelegate.m */; };
 		3BB43CB8259DB9FF0093B92C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB43CB7259DB9FF0093B92C /* SceneDelegate.m */; };
 		3BB43CC0259DBA020093B92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB43CBF259DBA020093B92C /* Assets.xcassets */; };
 		3BB43CC3259DBA020093B92C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB43CC1259DBA020093B92C /* LaunchScreen.storyboard */; };
 		3BB43CC6259DBA020093B92C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB43CC5259DBA020093B92C /* main.m */; };
 		3BB43CD1259DBA6F0093B92C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB43CD0259DBA6F0093B92C /* MainViewController.m */; };
+		3BB43CE0259DBF410093B92C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB43CDF259DBF410093B92C /* WidgetKit.framework */; };
+		3BB43CE2259DBF410093B92C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB43CE1259DBF410093B92C /* SwiftUI.framework */; };
+		3BB43CE5259DBF410093B92C /* HoldingsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB43CE4259DBF410093B92C /* HoldingsWidget.swift */; };
+		3BB43CE7259DBF430093B92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB43CE6259DBF430093B92C /* Assets.xcassets */; };
+		3BB43CEB259DBF430093B92C /* HoldingsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3BB43CDD259DBF410093B92C /* HoldingsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3BB43CE9259DBF430093B92C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BB43CA8259DB9FF0093B92C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BB43CDC259DBF410093B92C;
+			remoteInfo = HoldingsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BB43CEF259DBF430093B92C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3BB43CEB259DBF430093B92C /* HoldingsWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3B505F90259DD2FC0055687F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3BB43CB0259DB9FF0093B92C /* Holdings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holdings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB43CB3259DB9FF0093B92C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BB43CB4259DB9FF0093B92C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +58,13 @@
 		3BB43CC5259DBA020093B92C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BB43CCF259DBA6F0093B92C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3BB43CD0259DBA6F0093B92C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3BB43CD7259DBEFA0093B92C /* Holdings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Holdings.entitlements; sourceTree = "<group>"; };
+		3BB43CDD259DBF410093B92C /* HoldingsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HoldingsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB43CDF259DBF410093B92C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3BB43CE1259DBF410093B92C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3BB43CE4259DBF410093B92C /* HoldingsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsWidget.swift; sourceTree = "<group>"; };
+		3BB43CE6259DBF430093B92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BB43CE8259DBF430093B92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BB43CDA259DBF410093B92C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB43CE2259DBF410093B92C /* SwiftUI.framework in Frameworks */,
+				3BB43CE0259DBF410093B92C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				3BB43CB2259DB9FF0093B92C /* Holdings */,
+				3BB43CE3259DBF410093B92C /* HoldingsWidget */,
+				3BB43CDE259DBF410093B92C /* Frameworks */,
 				3BB43CB1259DB9FF0093B92C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3BB43CB0259DB9FF0093B92C /* Holdings.app */,
+				3BB43CDD259DBF410093B92C /* HoldingsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +109,7 @@
 		3BB43CB2259DB9FF0093B92C /* Holdings */ = {
 			isa = PBXGroup;
 			children = (
+				3BB43CD7259DBEFA0093B92C /* Holdings.entitlements */,
 				3BB43CB3259DB9FF0093B92C /* AppDelegate.h */,
 				3BB43CB4259DB9FF0093B92C /* AppDelegate.m */,
 				3BB43CB6259DB9FF0093B92C /* SceneDelegate.h */,
@@ -73,6 +124,26 @@
 			path = Holdings;
 			sourceTree = "<group>";
 		};
+		3BB43CDE259DBF410093B92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB43CDF259DBF410093B92C /* WidgetKit.framework */,
+				3BB43CE1259DBF410093B92C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BB43CE3259DBF410093B92C /* HoldingsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3BB43CE4259DBF410093B92C /* HoldingsWidget.swift */,
+				3B505F90259DD2FC0055687F /* Extensions.swift */,
+				3BB43CE6259DBF430093B92C /* Assets.xcassets */,
+				3BB43CE8259DBF430093B92C /* Info.plist */,
+			);
+			path = HoldingsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +154,35 @@
 				3BB43CAC259DB9FF0093B92C /* Sources */,
 				3BB43CAD259DB9FF0093B92C /* Frameworks */,
 				3BB43CAE259DB9FF0093B92C /* Resources */,
+				3BB43CD5259DBD230093B92C /* ShellScript */,
+				3BB43CEF259DBF430093B92C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3BB43CEA259DBF430093B92C /* PBXTargetDependency */,
 			);
 			name = Holdings;
 			productName = Holdings;
 			productReference = 3BB43CB0259DB9FF0093B92C /* Holdings.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3BB43CDC259DBF410093B92C /* HoldingsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB43CEC259DBF430093B92C /* Build configuration list for PBXNativeTarget "HoldingsWidgetExtension" */;
+			buildPhases = (
+				3BB43CD9259DBF410093B92C /* Sources */,
+				3BB43CDA259DBF410093B92C /* Frameworks */,
+				3BB43CDB259DBF410093B92C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoldingsWidgetExtension;
+			productName = HoldingsWidgetExtension;
+			productReference = 3BB43CDD259DBF410093B92C /* HoldingsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,9 +190,13 @@
 		3BB43CA8259DB9FF0093B92C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					3BB43CAF259DB9FF0093B92C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3BB43CDC259DBF410093B92C = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -120,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				3BB43CAF259DB9FF0093B92C /* Holdings */,
+				3BB43CDC259DBF410093B92C /* HoldingsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +230,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BB43CDB259DBF410093B92C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB43CE7259DBF430093B92C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BB43CD5259DBD230093B92C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\necho \"RUNNING SCRIPT ...\"\necho \"${PROJECT_BUNDLE_IDENTIFIER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BB43CAC259DB9FF0093B92C /* Sources */ = {
@@ -148,7 +272,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BB43CD9259DBF410093B92C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB43CE5259DBF410093B92C /* HoldingsWidget.swift in Sources */,
+				3B505F91259DD2FC0055687F /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BB43CEA259DBF430093B92C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BB43CDC259DBF410093B92C /* HoldingsWidgetExtension */;
+			targetProxy = 3BB43CE9259DBF430093B92C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3BB43CC1259DBA020093B92C /* LaunchScreen.storyboard */ = {
@@ -277,8 +418,10 @@
 		3BB43CCA259DBA020093B92C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Holdings/Holdings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2473KE85XF;
 				INFOPLIST_FILE = Holdings/Info.plist;
@@ -295,8 +438,10 @@
 		3BB43CCB259DBA020093B92C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Holdings/Holdings.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2473KE85XF;
 				INFOPLIST_FILE = Holdings/Info.plist;
@@ -306,6 +451,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluepego.Holdings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BB43CED259DBF430093B92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2473KE85XF;
+				INFOPLIST_FILE = HoldingsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluepego.Holdings.HoldingsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BB43CEE259DBF430093B92C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2473KE85XF;
+				INFOPLIST_FILE = HoldingsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluepego.Holdings.HoldingsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -327,6 +518,15 @@
 			buildConfigurations = (
 				3BB43CCA259DBA020093B92C /* Debug */,
 				3BB43CCB259DBA020093B92C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB43CEC259DBF430093B92C /* Build configuration list for PBXNativeTarget "HoldingsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB43CED259DBF430093B92C /* Debug */,
+				3BB43CEE259DBF430093B92C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
